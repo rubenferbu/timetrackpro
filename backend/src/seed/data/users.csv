@@ -1,0 +1,52 @@
+name,email,password,role,companyName,managerEmail
+Admin Plataforma,superadmin@timetrackpro.io,Password123!,superAdmin,,
+Beatriz Ramos,beatriz.ramos@acme.com,Password123!,companyAdmin,Acme Iberica SL,
+Ismael Blanco,ismael.blanco@acme.com,Password123!,manager,Acme Iberica SL,beatriz.ramos@acme.com
+Adrian Diaz,adrian.diaz@acme.com,Password123!,manager,Acme Iberica SL,beatriz.ramos@acme.com
+Adrian Perez,adrian.perez@acme.com,Password123!,employee,Acme Iberica SL,ismael.blanco@acme.com
+Sergio Sanchez,sergio.sanchez@acme.com,Password123!,employee,Acme Iberica SL,adrian.diaz@acme.com
+Victor Gomez,victor.gomez@acme.com,Password123!,employee,Acme Iberica SL,ismael.blanco@acme.com
+Sara Alvarez,sara.alvarez@acme.com,Password123!,employee,Acme Iberica SL,adrian.diaz@acme.com
+Ana Navarro,ana.navarro@acme.com,Password123!,employee,Acme Iberica SL,ismael.blanco@acme.com
+Victor Ramos,victor.ramos@acme.com,Password123!,employee,Acme Iberica SL,adrian.diaz@acme.com
+Sergio Dominguez,sergio.dominguez@acme.com,Password123!,employee,Acme Iberica SL,ismael.blanco@acme.com
+Elena Navarro,elena.navarro@distribuciones.com,Password123!,companyAdmin,Distribuciones Levante SA,
+Alvaro Gomez,alvaro.gomez@distribuciones.com,Password123!,manager,Distribuciones Levante SA,elena.navarro@distribuciones.com
+Oscar Gomez,oscar.gomez@distribuciones.com,Password123!,manager,Distribuciones Levante SA,elena.navarro@distribuciones.com
+Silvia Garcia,silvia.garcia@distribuciones.com,Password123!,employee,Distribuciones Levante SA,alvaro.gomez@distribuciones.com
+Diego Vazquez,diego.vazquez@distribuciones.com,Password123!,employee,Distribuciones Levante SA,oscar.gomez@distribuciones.com
+Pablo Diaz,pablo.diaz@distribuciones.com,Password123!,employee,Distribuciones Levante SA,alvaro.gomez@distribuciones.com
+Adrian Blanco,adrian.blanco@distribuciones.com,Password123!,employee,Distribuciones Levante SA,oscar.gomez@distribuciones.com
+Hugo Ramos,hugo.ramos@distribuciones.com,Password123!,employee,Distribuciones Levante SA,alvaro.gomez@distribuciones.com
+Oscar Garcia,oscar.garcia@distribuciones.com,Password123!,employee,Distribuciones Levante SA,oscar.gomez@distribuciones.com
+Ruben Fernandez,ruben.fernandez@distribuciones.com,Password123!,employee,Distribuciones Levante SA,alvaro.gomez@distribuciones.com
+Ismael Vazquez,ismael.vazquez@consultora.com,Password123!,companyAdmin,Consultora Norte,
+Adrian Gomez,adrian.gomez@consultora.com,Password123!,manager,Consultora Norte,ismael.vazquez@consultora.com
+Paula Gomez,paula.gomez@consultora.com,Password123!,manager,Consultora Norte,ismael.vazquez@consultora.com
+Silvia Martinez,silvia.martinez@consultora.com,Password123!,employee,Consultora Norte,adrian.gomez@consultora.com
+Alvaro Serrano,alvaro.serrano@consultora.com,Password123!,employee,Consultora Norte,paula.gomez@consultora.com
+Rocio Blanco,rocio.blanco@consultora.com,Password123!,employee,Consultora Norte,adrian.gomez@consultora.com
+Ismael Martinez,ismael.martinez@consultora.com,Password123!,employee,Consultora Norte,paula.gomez@consultora.com
+Paula Blanco,paula.blanco@consultora.com,Password123!,employee,Consultora Norte,adrian.gomez@consultora.com
+Diego Alvarez,diego.alvarez@consultora.com,Password123!,employee,Consultora Norte,paula.gomez@consultora.com
+Marta Blanco,marta.blanco@consultora.com,Password123!,employee,Consultora Norte,adrian.gomez@consultora.com
+Sergio Ramos,sergio.ramos@techsur.com,Password123!,companyAdmin,TechSur Soluciones,
+Cristina Martinez,cristina.martinez@techsur.com,Password123!,manager,TechSur Soluciones,sergio.ramos@techsur.com
+Sergio Perez,sergio.perez@techsur.com,Password123!,manager,TechSur Soluciones,sergio.ramos@techsur.com
+Cristina Torres,cristina.torres@techsur.com,Password123!,employee,TechSur Soluciones,cristina.martinez@techsur.com
+Laura Navarro,laura.navarro@techsur.com,Password123!,employee,TechSur Soluciones,sergio.perez@techsur.com
+Irene Romero,irene.romero@techsur.com,Password123!,employee,TechSur Soluciones,cristina.martinez@techsur.com
+Ruben Gomez,ruben.gomez@techsur.com,Password123!,employee,TechSur Soluciones,sergio.perez@techsur.com
+Silvia Ruiz,silvia.ruiz@techsur.com,Password123!,employee,TechSur Soluciones,cristina.martinez@techsur.com
+Marina Perez,marina.perez@techsur.com,Password123!,employee,TechSur Soluciones,sergio.perez@techsur.com
+Carlos Martinez,carlos.martinez@techsur.com,Password123!,employee,TechSur Soluciones,cristina.martinez@techsur.com
+Sara Serrano,sara.serrano@retail.com,Password123!,companyAdmin,Retail Andalucia SL,
+Adrian Vazquez,adrian.vazquez@retail.com,Password123!,manager,Retail Andalucia SL,sara.serrano@retail.com
+Elena Diaz,elena.diaz@retail.com,Password123!,manager,Retail Andalucia SL,sara.serrano@retail.com
+Adrian Sanchez,adrian.sanchez@retail.com,Password123!,employee,Retail Andalucia SL,adrian.vazquez@retail.com
+Cristina Romero,cristina.romero@retail.com,Password123!,employee,Retail Andalucia SL,elena.diaz@retail.com
+Miguel Gomez,miguel.gomez@retail.com,Password123!,employee,Retail Andalucia SL,adrian.vazquez@retail.com
+Sara Navarro,sara.navarro@retail.com,Password123!,employee,Retail Andalucia SL,elena.diaz@retail.com
+Paula Moreno,paula.moreno@retail.com,Password123!,employee,Retail Andalucia SL,adrian.vazquez@retail.com
+Sergio Vazquez,sergio.vazquez@retail.com,Password123!,employee,Retail Andalucia SL,elena.diaz@retail.com
+Sergio Ruiz,sergio.ruiz@retail.com,Password123!,employee,Retail Andalucia SL,adrian.vazquez@retail.com

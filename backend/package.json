@@ -1,0 +1,26 @@
+{
+  "name": "timetrackpro-backend",
+  "version": "1.0.0",
+  "description": "API multi-tenant de TimeTrack Pro (control horario y ausencias)",
+  "main": "src/app.js",
+  "type": "commonjs",
+  "scripts": {
+    "seed": "node src/seed/seed.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.5.0",
+    "express-validator": "^7.1.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^9.4.0"
+  }
+}

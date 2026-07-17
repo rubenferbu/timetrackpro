@@ -1,0 +1,50 @@
+userEmail,companyName,type,startDate,endDate,status,approvedByEmail
+adrian.diaz@acme.com,Acme Iberica SL,vacation,2026-08-21,2026-08-28,approved,beatriz.ramos@acme.com
+adrian.diaz@acme.com,Acme Iberica SL,personal,2026-07-28,2026-07-30,rejected,beatriz.ramos@acme.com
+adrian.diaz@acme.com,Acme Iberica SL,personal,2026-08-02,2026-08-04,approved,beatriz.ramos@acme.com
+adrian.perez@acme.com,Acme Iberica SL,vacation,2026-08-26,2026-08-28,rejected,ismael.blanco@acme.com
+sergio.sanchez@acme.com,Acme Iberica SL,personal,2026-06-18,2026-06-19,approved,adrian.diaz@acme.com
+sergio.sanchez@acme.com,Acme Iberica SL,personal,2026-06-20,2026-06-22,pending,
+sara.alvarez@acme.com,Acme Iberica SL,sick,2026-09-08,2026-09-09,rejected,adrian.diaz@acme.com
+ana.navarro@acme.com,Acme Iberica SL,personal,2026-09-01,2026-09-02,approved,ismael.blanco@acme.com
+victor.ramos@acme.com,Acme Iberica SL,vacation,2026-08-19,2026-08-26,pending,
+victor.ramos@acme.com,Acme Iberica SL,sick,2026-06-01,2026-06-03,pending,
+sergio.dominguez@acme.com,Acme Iberica SL,sick,2026-05-23,2026-05-24,approved,ismael.blanco@acme.com
+sergio.dominguez@acme.com,Acme Iberica SL,personal,2026-06-18,2026-06-20,approved,ismael.blanco@acme.com
+sergio.dominguez@acme.com,Acme Iberica SL,sick,2026-06-24,2026-06-25,rejected,ismael.blanco@acme.com
+oscar.gomez@distribuciones.com,Distribuciones Levante SA,personal,2026-08-07,2026-08-09,rejected,elena.navarro@distribuciones.com
+oscar.gomez@distribuciones.com,Distribuciones Levante SA,personal,2026-07-03,2026-07-04,rejected,elena.navarro@distribuciones.com
+oscar.gomez@distribuciones.com,Distribuciones Levante SA,vacation,2026-07-16,2026-07-19,approved,elena.navarro@distribuciones.com
+silvia.garcia@distribuciones.com,Distribuciones Levante SA,sick,2026-07-23,2026-07-24,pending,
+silvia.garcia@distribuciones.com,Distribuciones Levante SA,sick,2026-08-22,2026-08-24,rejected,alvaro.gomez@distribuciones.com
+hugo.ramos@distribuciones.com,Distribuciones Levante SA,vacation,2026-05-29,2026-06-05,approved,alvaro.gomez@distribuciones.com
+hugo.ramos@distribuciones.com,Distribuciones Levante SA,sick,2026-05-14,2026-05-16,approved,alvaro.gomez@distribuciones.com
+hugo.ramos@distribuciones.com,Distribuciones Levante SA,personal,2026-09-07,2026-09-08,rejected,alvaro.gomez@distribuciones.com
+oscar.garcia@distribuciones.com,Distribuciones Levante SA,vacation,2026-09-02,2026-09-05,approved,oscar.gomez@distribuciones.com
+oscar.garcia@distribuciones.com,Distribuciones Levante SA,sick,2026-06-15,2026-06-16,approved,oscar.gomez@distribuciones.com
+ruben.fernandez@distribuciones.com,Distribuciones Levante SA,vacation,2026-07-03,2026-07-09,approved,alvaro.gomez@distribuciones.com
+adrian.gomez@consultora.com,Consultora Norte,sick,2026-08-05,2026-08-06,pending,
+silvia.martinez@consultora.com,Consultora Norte,sick,2026-05-23,2026-05-24,pending,
+alvaro.serrano@consultora.com,Consultora Norte,vacation,2026-05-15,2026-05-21,approved,paula.gomez@consultora.com
+alvaro.serrano@consultora.com,Consultora Norte,vacation,2026-09-01,2026-09-05,pending,
+alvaro.serrano@consultora.com,Consultora Norte,sick,2026-05-23,2026-05-24,approved,paula.gomez@consultora.com
+paula.blanco@consultora.com,Consultora Norte,sick,2026-09-03,2026-09-05,approved,adrian.gomez@consultora.com
+paula.blanco@consultora.com,Consultora Norte,vacation,2026-08-04,2026-08-10,approved,adrian.gomez@consultora.com
+marta.blanco@consultora.com,Consultora Norte,sick,2026-06-27,2026-06-28,pending,
+cristina.martinez@techsur.com,TechSur Soluciones,sick,2026-07-31,2026-08-02,rejected,sergio.ramos@techsur.com
+laura.navarro@techsur.com,TechSur Soluciones,vacation,2026-07-28,2026-08-03,approved,sergio.perez@techsur.com
+irene.romero@techsur.com,TechSur Soluciones,sick,2026-08-23,2026-08-24,approved,cristina.martinez@techsur.com
+irene.romero@techsur.com,TechSur Soluciones,personal,2026-05-24,2026-05-25,pending,
+irene.romero@techsur.com,TechSur Soluciones,personal,2026-08-14,2026-08-16,pending,
+silvia.ruiz@techsur.com,TechSur Soluciones,vacation,2026-07-19,2026-07-24,pending,
+silvia.ruiz@techsur.com,TechSur Soluciones,personal,2026-07-03,2026-07-05,pending,
+marina.perez@techsur.com,TechSur Soluciones,sick,2026-07-02,2026-07-03,approved,sergio.perez@techsur.com
+elena.diaz@retail.com,Retail Andalucia SL,sick,2026-05-30,2026-06-01,rejected,sara.serrano@retail.com
+elena.diaz@retail.com,Retail Andalucia SL,personal,2026-07-06,2026-07-08,pending,
+adrian.sanchez@retail.com,Retail Andalucia SL,sick,2026-08-20,2026-08-21,approved,adrian.vazquez@retail.com
+sara.navarro@retail.com,Retail Andalucia SL,vacation,2026-05-19,2026-05-20,rejected,elena.diaz@retail.com
+sara.navarro@retail.com,Retail Andalucia SL,sick,2026-07-17,2026-07-19,pending,
+paula.moreno@retail.com,Retail Andalucia SL,sick,2026-08-11,2026-08-13,approved,adrian.vazquez@retail.com
+paula.moreno@retail.com,Retail Andalucia SL,personal,2026-07-21,2026-07-22,approved,adrian.vazquez@retail.com
+paula.moreno@retail.com,Retail Andalucia SL,sick,2026-05-24,2026-05-25,rejected,adrian.vazquez@retail.com
+sergio.vazquez@retail.com,Retail Andalucia SL,personal,2026-06-24,2026-06-26,pending,
