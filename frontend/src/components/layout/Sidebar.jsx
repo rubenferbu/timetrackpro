@@ -1,0 +1,37 @@
+import { NavLink } from 'react-router-dom';
+import { NAV_ITEMS } from '../../constants/navigation';
+import { useAuth } from '../../hooks/useAuth';
+import './Sidebar.css';
+
+function Sidebar() {
+    const { user } = useAuth();
+
+    const visibleItems = NAV_ITEMS.filter((item) => item.roles.includes(user?.role));
+
+    return (
+        <aside className="sidebar">
+            <div className="sidebar-brand">
+                {user?.companyId?.name || 'TimeTrack Pro'}
+            </div>
+
+            <nav className="sidebar-nav">
+                {visibleItems.map((item) => (
+                    <NavLink
+                        key={item.to}
+                        to={item.to}
+                        className={({ isActive }) => `sidebar-link${isActive ? ' active' : ''}`}
+                    >
+                        {item.label}
+                    </NavLink>
+                ))}
+            </nav>
+
+            <div className="sidebar-user">
+                <div className="sidebar-avatar">{user?.name?.[0]?.toUpperCase()}</div>
+                <span>{user?.name}</span>
+            </div>
+        </aside>
+    );
+}
+
+export default Sidebar;

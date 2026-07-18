@@ -3,7 +3,7 @@ const AppError = require('../utils/AppError');
 const catchAsync = require('../utils/catchAsync');
 const { getPagination } = require('../utils/paginate');
 
-const CREATABLE_ROLES = ['employee', 'mannger'];
+const CREATABLE_ROLES = ['employee', 'manager'];
 const listUsers = catchAsync(async (req, res) => {
     const { page, limit, skip } = getPagination(req);
 
