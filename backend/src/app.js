@@ -13,7 +13,12 @@ const companyRoutes = require('./routes/companyRoutes');
 const app = express();
 
 app.use(helmet());
-app.use(cors());
+const allowedOrigins = [
+    'http://localhost:5173',
+    process.env.FRONTEND_URL,
+].filter(Boolean);
+
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 
 const authLimiter = rateLimit({
@@ -21,7 +26,7 @@ const authLimiter = rateLimit({
     max: 20,
     message: {
         success: false,
-        error: { code: 'RATE_LIMITED', message: 'Demasiados intentos, prueba mas tarde'},
+        error: { code: 'RATE_LIMITED', message: 'Demasiados intentos, prueba mas tarde' },
     },
 });
 
