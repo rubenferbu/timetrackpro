@@ -1,12 +1,18 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { NAV_ITEMS } from '../../constants/navigation';
 import { useAuth } from '../../hooks/useAuth';
 import './Sidebar.css';
 
 function Sidebar() {
-    const { user } = useAuth();
+    const { user, logout } = useAuth();
+    const navigate = useNavigate();
 
     const visibleItems = NAV_ITEMS.filter((item) => item.roles.includes(user?.role));
+
+    function handleLogout() {
+        logout();
+        navigate('/login');
+    }
 
     return (
         <aside className="sidebar">
@@ -26,9 +32,14 @@ function Sidebar() {
                 ))}
             </nav>
 
-            <div className="sidebar-user">
-                <div className="sidebar-avatar">{user?.name?.[0]?.toUpperCase()}</div>
-                <span>{user?.name}</span>
+            <div className="sidebar-footer">
+                <div className="sidebar-user">
+                    <div className="sidebar-avatar">{user?.name?.[0]?.toUpperCase()}</div>
+                    <span>{user?.name}</span>
+                </div>
+                <button className="sidebar-logout" onClick={handleLogout}>
+                    Cerrar sesión
+                </button>
             </div>
         </aside>
     );
