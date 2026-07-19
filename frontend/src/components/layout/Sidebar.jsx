@@ -29,6 +29,7 @@ function Sidebar({ onNavigate }) {
                         key={item.to}
                         to={item.to}
                         onClick={onNavigate}
+                        end={item.to === '/team'}
                         className={({ isActive }) => `sidebar-link${isActive ? ' active' : ''}`}
                     >
                         {item.label}
