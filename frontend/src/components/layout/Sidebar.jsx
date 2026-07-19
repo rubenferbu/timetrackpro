@@ -2,6 +2,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { NAV_ITEMS } from '../../constants/navigation';
 import { useAuth } from '../../hooks/useAuth';
 import ThemeToggle from '../common/ThemeToggle';
+import Logo from '../common/Logo';
 import './Sidebar.css';
 
 function Sidebar({ onNavigate }) {
@@ -18,7 +19,8 @@ function Sidebar({ onNavigate }) {
     return (
         <aside className="sidebar">
             <div className="sidebar-brand">
-                {user?.companyId?.name || 'TimeTrack Pro'}
+                <Logo size={24} showWordmark={!user?.companyId?.name} />
+                {user?.companyId?.name && <span className="sidebar-brand-company">{user.companyId.name}</span>}
             </div>
 
             <nav className="sidebar-nav">
