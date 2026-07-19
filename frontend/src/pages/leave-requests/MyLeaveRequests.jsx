@@ -63,9 +63,9 @@ function MyLeaveRequests() {
                 <div className="lr-table">
                     {requests.map((req) => (
                         <div className="lr-row" key={req._id}>
-                            <span>{LEAVE_TYPE_LABELS[req.type]}</span>
-                            <span>{formatDateTime(req.startDate)} → {formatDateTime(req.endDate)}</span>
-                            <span className={`lr-badge lr-badge-${req.status}`}>
+                            <span data-label="Tipo">{LEAVE_TYPE_LABELS[req.type]}</span>
+                            <span data-label="Fechas">{formatDateTime(req.startDate)} → {formatDateTime(req.endDate)}</span>
+                            <span className={`lr-badge lr-badge-${req.status}`} data-label="Estado">
                                 {LEAVE_STATUS_LABELS[req.status]}
                             </span>
                         </div>

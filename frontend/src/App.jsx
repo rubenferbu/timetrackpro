@@ -1,3 +1,4 @@
+import { useTheme } from './hooks/useTheme';
 import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import ProtectedRoute from './routes/ProtectedRoute';
@@ -12,8 +13,10 @@ const TeamTimeEntries = lazy(() => import('./pages/team/TeamTimeEntries'));
 const TeamLeaveRequests = lazy(() => import('./pages/team/TeamLeaveRequests'));
 const Employees = lazy(() => import('./pages/employees/Employees'));
 const NotAuthorized = lazy(() => import('./pages/NotAuthorized'));
+const CompaniesAdmin = lazy(() => import('./pages/dashboard/SuperAdminDashboard'));
 
 function App() {
+  useTheme();
   return (
     <BrowserRouter>
       <Suspense fallback={<div style={{ padding: 'var(--spacing-xl)' }}>Cargando...</div>}>
@@ -32,10 +35,8 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/time-entries" element={<MyTimeEntries />} />
             <Route path="/leave-requests" element={<MyLeaveRequests />} />
+            <Route path="/companies" element={<CompaniesAdmin />} />
 
-            {/* Grupo manager/companyAdmin: solo verifica rol, NO vuelve a
-                envolver con Layout (ya estamos dentro de uno). Por eso pasa
-                <Outlet/> como children en vez de <Layout/>. */}
             <Route
               element={
                 <ProtectedRoute allowedRoles={['manager', 'companyAdmin']}>

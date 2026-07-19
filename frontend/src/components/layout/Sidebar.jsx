@@ -1,9 +1,10 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { NAV_ITEMS } from '../../constants/navigation';
 import { useAuth } from '../../hooks/useAuth';
+import ThemeToggle from '../common/ThemeToggle';
 import './Sidebar.css';
 
-function Sidebar() {
+function Sidebar({ onNavigate }) {
     const { user, logout } = useAuth();
     const navigate = useNavigate();
 
@@ -25,6 +26,7 @@ function Sidebar() {
                     <NavLink
                         key={item.to}
                         to={item.to}
+                        onClick={onNavigate}
                         className={({ isActive }) => `sidebar-link${isActive ? ' active' : ''}`}
                     >
                         {item.label}
@@ -33,6 +35,7 @@ function Sidebar() {
             </nav>
 
             <div className="sidebar-footer">
+                <ThemeToggle />
                 <div className="sidebar-user">
                     <div className="sidebar-avatar">{user?.name?.[0]?.toUpperCase()}</div>
                     <span>{user?.name}</span>

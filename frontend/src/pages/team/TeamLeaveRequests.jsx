@@ -20,12 +20,12 @@ function TeamLeaveRequests() {
                 <div className="team-table">
                     {requests.map((req) => (
                         <div className="team-row team-row-actions" key={req._id}>
-                            <span className="team-row-name">{req.userId?.name}</span>
-                            <span>{LEAVE_TYPE_LABELS[req.type]}</span>
-                            <span>{formatDateTime(req.startDate)} → {formatDateTime(req.endDate)}</span>
+                            <span className="team-row-name" data-label="Empleado">{req.userId?.name}</span>
+                            <span data-label="Tipo">{LEAVE_TYPE_LABELS[req.type]}</span>
+                            <span data-label="Fechas">{formatDateTime(req.startDate)} → {formatDateTime(req.endDate)}</span>
 
                             {req.status === 'pending' ? (
-                                <span className="team-actions">
+                                <span className="team-actions" data-label="Acciones">
                                     <button
                                         className="team-btn-approve"
                                         disabled={processingId === req._id}
@@ -42,7 +42,7 @@ function TeamLeaveRequests() {
                                     </button>
                                 </span>
                             ) : (
-                                <span className={`lr-badge lr-badge-${req.status}`}>
+                                <span className={`lr-badge lr-badge-${req.status}`} data-label="Estado">
                                     {LEAVE_STATUS_LABELS[req.status]}
                                 </span>
                             )}

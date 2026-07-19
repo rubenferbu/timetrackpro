@@ -160,5 +160,62 @@
 
 .emp-btn-danger {
     color: var(--color-danger);
-    border-color: var(--color-danger) !important;
+    border-color: var(--color-danger);
+}
+
+@media (max-width: 768px) {
+  .emp-page {
+    padding: var(--spacing-md);
+  }
+
+  .emp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .emp-btn-new {
+    width: 100%;
+  }
+
+  .emp-form {
+    max-width: 100%;
+  }
+
+  .emp-table {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .emp-row {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .emp-row span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+  }
+
+  .emp-row span::before {
+    content: attr(data-label);
+    font-size: 11px;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+
+  .emp-actions {
+    justify-content: flex-end;
+  }
 }

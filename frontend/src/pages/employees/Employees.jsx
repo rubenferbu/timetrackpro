@@ -138,13 +138,13 @@ function Employees() {
                 <div className="emp-table">
                     {employees.map((emp) => (
                         <div className="emp-row" key={emp._id}>
-                            <span className="emp-row-name">{emp.name}</span>
-                            <span>{emp.email}</span>
-                            <span>{ROLE_LABELS[emp.role]}</span>
-                            <span className={emp.isActive ? 'emp-status-active' : 'emp-status-inactive'}>
+                            <span className="emp-row-name" data-label="Nombre">{emp.name}</span>
+                            <span data-label="Email">{emp.email}</span>
+                            <span data-label="Rol">{ROLE_LABELS[emp.role]}</span>
+                            <span data-label="Estado" className={emp.isActive ? 'emp-status-active' : 'emp-status-inactive'}>
                                 {emp.isActive ? 'Activo' : 'Inactivo'}
                             </span>
-                            <span className="emp-actions">
+                            <span className="emp-actions" data-label="Acciones">
                                 <button onClick={() => openEditForm(emp)}>Editar</button>
                                 {emp.isActive ? (
                                     <button className="emp-btn-danger" onClick={() => deactivateEmployee(emp._id)}>

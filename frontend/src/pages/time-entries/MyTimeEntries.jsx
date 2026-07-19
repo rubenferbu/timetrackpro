@@ -41,9 +41,9 @@ function MyTimeEntries() {
                 <div className="te-table">
                     {entries.map((entry) => (
                         <div className="te-row" key={entry._id}>
-                            <span>{formatDateTime(entry.clockIn)}</span>
-                            <span>{entry.clockOut ? formatDateTime(entry.clockOut) : 'En curso'}</span>
-                            <span>{formatDuration(entry.durationMinutes)}</span>
+                            <span data-label="Entrada">{formatDateTime(entry.clockIn)}</span>
+                            <span data-label="Salida">{entry.clockOut ? formatDateTime(entry.clockOut) : 'En curso'}</span>
+                            <span data-label="Duración">{formatDuration(entry.durationMinutes)}</span>
                         </div>
                     ))}
                 </div>

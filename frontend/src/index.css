@@ -1,4 +1,6 @@
 @import './styles/variables.css';
+@import './styles/breakpoints.css';
+@import './styles/badges.css';
 
 * {
   box-sizing: border-box;
